@@ -28,12 +28,13 @@ import {
 
 // CONFIGURACIÓN FIREBASE
 const firebaseConfig = {
-    apiKey: "TU_API_KEY",
-    authDomain: "TU_PROYECTO.firebaseapp.com",
-    projectId: "TU_PROJECT_ID",
-    storageBucket: "TU_BUCKET",
-    messagingSenderId: "TU_SENDER_ID",
-    appId: "TU_APP_ID"
+    apiKey: "AIzaSyAVG135n78fv0vymOyNPvCBTBHu1cRLOyk",
+    authDomain: "recuerdos-f8eef.firebaseapp.com",
+    projectId: "recuerdos-f8eef",
+    storageBucket: "recuerdos-f8eef.firebasestorage.app",
+    messagingSenderId: "273286618787",
+    appId: "1:273286618787:web:d018408b92db79bb8d2916",
+    measurementId: "G-4LR6FB26BT"
 };
 
 const app = initializeApp(firebaseConfig);
