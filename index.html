@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Nosotros ♡</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">♡ Entre Nosotros</div>
+    <button id="logoutBtn" class="logout hidden">
+        Cerrar sesión
+    </button>
+</header>
+
+<main>
+
+    <!-- LOGIN -->
+    <section id="loginScreen" class="login-container">
+        <div class="login-card">
+            <span class="heart">♡</span>
+            <p class="subtitle">UN ESPACIO SOLO NUESTRO</p>
+
+            <h1>Una historia,<br>
+                <span>mil recuerdos.</span>
+            </h1>
+
+            <p class="description">
+                Un lugar para guardar nuestras fotografías,
+                videos y momentos especiales.
+            </p>
+
+            <form id="loginForm">
+                <input type="email" id="email"
+                    placeholder="Correo electrónico" required>
+
+                <input type="password" id="password"
+                    placeholder="Contraseña" required>
+
+                <button type="submit">
+                    Entrar a nuestros recuerdos →
+                </button>
+            </form>
+
+            <p id="loginMessage"></p>
+        </div>
+    </section>
+
+    <!-- ALBUM -->
+    <section id="albumScreen" class="hidden">
+
+        <div class="hero">
+            <p class="subtitle">NUESTRO ÁLBUM DIGITAL</p>
+            <h1>Lo bonito de <span>nosotros.</span></h1>
+            <p>Cada recuerdo tiene una historia.</p>
+        </div>
+
+        <!-- SUBIR ARCHIVOS -->
+        <section class="upload-card">
+            <h2>♡ Guardar un momento</h2>
+
+            <p>
+                Sube fotografías o videos desde tu dispositivo.
+            </p>
+
+            <form id="uploadForm">
+
+                <input type="file" id="mediaFile"
+                    accept="image/*,video/*" multiple required>
+
+                <textarea id="description"
+                    placeholder="Escribe algo sobre este recuerdo..."></textarea>
+
+                <button type="submit" id="uploadBtn">
+                    Subir recuerdos ↑
+                </button>
+
+                <p id="uploadMessage"></p>
+            </form>
+        </section>
+
+        <!-- GALERÍA -->
+        <section class="gallery-section">
+
+            <div class="gallery-title">
+                <div>
+                    <p class="subtitle">NUESTROS MOMENTOS</p>
+                    <h2>Nuestra colección</h2>
+                </div>
+                <span id="totalMemories">0 recuerdos</span>
+            </div>
+
+            <div id="gallery" class="gallery">
+                <p class="empty">Todavía no hay recuerdos ♡</p>
+            </div>
+
+        </section>
+
+    </section>
+
+</main>
+
+<footer>
+    Hecho de momentos, cariño y pequeñas historias ♡
+</footer>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
